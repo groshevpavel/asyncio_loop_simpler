@@ -131,4 +131,6 @@ if __name__ == "__main__":
     a.addtask(wait)
     # a.addtask(pr)
 
+    # здесь *[(i, i) for i in range(10)] это СПИСОК параметров для первого задания
+    # итого будет 10 футур(запусков main_task) c параметрами от 0 до 9
     a.start_event_loop(*[(i, i) for i in range(10)])
